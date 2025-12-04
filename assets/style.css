@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(12, 33, 74);
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  height: 3dvw;
+  border: 3px solid white;
+  border-radius: 5px;
+
+  text-align: center;
+  justify-self: center;
+  font-size: 2dvw;
+}
+button:hover {
+  border: 3px solid blue;
+}
+
+/* Menu */
+
+#menu {
+  text-align: center;
+  font-size: 2dvw;
+}
+
+#menu select {
+    margin: 0;
+  margin: 25px 0 25px 0;
+  background: white;
+  height: 2.5dvw;
+  width: 8dvw;
+  font-size: 1.7dvw;
+    font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* game */
+
+#game {
+  text-align: center;
+}
+
+#pkmn-image {
+  height: 60dvh;
+  width: auto;
+  background: url("img/PokeBall_icon.svg") center center no-repeat;
+  background-size:cover;
+}
+
+
+#info {
+  height: 68dvh;
+}
+
+#game button {
+    margin-bottom: 10px;
+}
+
+
+#stats {
+  width: 60dvw;
+  height: 10dvh;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1dvw;
+}
+
+#stats button {
+  height: 100%;
+  width: 100%;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 2dvw;
+}
+
+#stats button[data-locked="1"] {
+  border: 3px solid red;
+}
+
+#stats button[data-locked="0"]:hover {
+  border: 3px solid blue;
+}
+
+#stats-values {
+  width: 60dvw;
+  height: 5dvh;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1dvw;
+}
+
+#stats-values span {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 2dvw;
+}
+
+/* end */
+
+#end {
+  text-align: center;
+  font-size: 2dvw;
+}
+
+#end p,
+#end div {
+  margin-top: 1dvh;
+}
+
+#end p {
+  margin-bottom: 2dvh;
+}

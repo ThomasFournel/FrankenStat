@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>FrankenStat</h1>
+        <p>Créez le meilleur Pokémon avec les stats de 6 Pokémons aléatoires</p>
+
+        <label for="genSelect">Génération :</label>
+        <select id="genSelect">
+            <option value="0">Toutes</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <div>
+            <button id="startGame">Jouer</button>
+        </div>
+    </div>
+
+    <div id="game" style="display: none;">
+        <div id="stats">
+            <button id="stat-hp" data-locked="0" data-stat="hp">PV</button>
+            <button id="stat-atk" data-locked="0" data-stat="atk">Attaque</button>
+            <button id="stat-def" data-locked="0" data-stat="def">Défense</button>
+            <button id="stat-spe_atk" data-locked="0" data-stat="spe_atk">Attaque Spé</button>
+            <button id="stat-spe_def" data-locked="0" data-stat="spe_def">Défense Spé</button>
+            <button id="stat-vit" data-locked="0" data-stat="vit">Vitesse</button>
+        </div>
+        <div id="stats-values">
+            <span id="value-hp"></span>
+            <span id="value-atk"></span>
+            <span id="value-def"></span>
+            <span id="value-spe_atk"></span>
+            <span id="value-spe_def"></span>
+            <span id="value-vit"></span>
+        </div>
+        <div id="info">
+            <img id="pkmn-image" src="" alt="Pokémon Image">
+            <h2 id="pkmn-name"></h2>
+        </div>
+        <button id="refresh-btn" style="display: none;">Prochain Pokémon</button>
+        <button id="finish-btn" style="display: none;">Terminer</button>
+        <p id="total-stats"></p>
+    </div>
+
+    <div id="end" style="display: none;">
+        <h2>Terminé</h2>
+
+        <p>Vos statistiques :</p>
+        <div id="end-stat-hp">PV : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <div id="end-stat-atk">Attaque : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <div id="end-stat-def">Défense : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <div id="end-stat-spe_atk">Attaque Spéciale : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <div id="end-stat-spe_def">Défense Spéciale : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <div id="end-stat-vit">Vitesse : <span class="statAmount"></span> (<span class="pkmn"></span>)</div>
+        <p id="end-total-stats"></p>
+        <button id="restart-btn">Recommencer</button>
+    </div>
+</body>
+</html>
+<script src="assets/code.js"></script>
