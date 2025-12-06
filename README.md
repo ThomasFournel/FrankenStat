@@ -1,8 +1,6 @@
 # FrankenStat
 
-A simple game where you need to make the best baseStatTotal using 6 pokémons stats
+Un simple jeu où vous devez créer la meilleur combinaison de statistiques en utilisant 6 statistiques de 6 pokémons aléatoires
 
 
-
-**Made using the tyradex API to search for pokémons**
-
+**Réalisé en utilisant l’API tyradex pour rechercher des pokémons**
